@@ -31,7 +31,7 @@ nav a{
     background-image: url(../leaves.jpg);
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-size: cover;
     /* took out "background-position: center;" because 
     it didn't seem to make a difference in this context.  */
@@ -42,19 +42,35 @@ main {
     color:black;
 }
 
-.about-me{
+#about-me{
     display: flex;
-
+    flex-direction: row;
     }
 
-.about-me h1{
-    flex-wrap: wrap;
+#about-me-header{
+    flex-direction: column;
     margin-left: 100px;
-
+    margin-right: 50px;
 }
 
-.about-me p{
-    margin-right: 30px;
-
+#about-me-text{
+    flex-direction: column;  
+    margin-left: 50px;  
 }
 
+#contact-me {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-me-header {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#contact-me nav ul li {
+    display: flex;
+    min-width: 300px;
+    justify-content: space-around;
+    margin-left: 50px;
+}
