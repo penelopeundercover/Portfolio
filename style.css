@@ -42,19 +42,21 @@ main {
     color:black;
 }
 
+main h1 {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
 #about-me{
     display: flex;
     flex-direction: row;
     }
 
-#about-me-header{
+#about-me h1 {
     flex-direction: column;
-    margin-left: 100px;
-    margin-right: 50px;
 }
-
 #about-me-text{
-    flex-direction: column;  
+    flex-direction: column; 
     margin-left: 50px;  
 }
 
@@ -63,14 +65,20 @@ main {
     flex-direction: row;
 }
 
-#contact-me-header {
-    margin-left: 100px;
-    margin-right: 50px;
-}
-
 #contact-me nav ul li {
     display: flex;
     min-width: 300px;
     justify-content: space-around;
     margin-left: 50px;
+}
+
+#column {
+    display: flex;
+    flex-direction: row;
+}
+
+.canopy-1 {
+    height: 300px;
+    width: 400px;
+    justify-content: center;
 }
