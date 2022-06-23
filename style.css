@@ -52,6 +52,11 @@ main h1 {
     flex-direction: row;
     }
 
+#Marianne {
+    height: 200px;
+    width: 150px;
+}
+
 #about-me h1 {
     flex-direction: column;
 }
