@@ -1,0 +1,18 @@
+/* Tablets */
+/* Based off of viewport dimensions of iPad Pro (1024px x 1366px). */
+@media screen and (max-width:1366px) {
+    header {
+        min-width: 1175px;
+        width: 100%;
+    }
+
+    #leaves {
+        min-width: 1175px;
+        width: 100%;
+    }
+}
+
+/* Phones */
+/* Based off of viewport dimensions between iPhone 5 (320px x 568px) and iPhone 12 (390px X 844px). */
+/* Using the Developer Extension on Chrome, I found that the screen size stayed the same in this size range,
+and therefore needed no media query.  */
