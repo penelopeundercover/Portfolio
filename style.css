@@ -5,13 +5,13 @@ header {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color:mediumblue;
+    background-color:black;
     }
 
 header h1 {
     padding: 5px;
-    color:mintcream;
-    background-color:mediumseagreen;
+    color:black;
+    background-color:;
     margin-left: 10px;
 }
 
@@ -38,46 +38,42 @@ nav a{
 }
 
 main {
-    background-color:azure;
-    color:black;
-}
-
-main h1 {
-    margin-left: 100px;
-    margin-right: 50px;
+    background-color:black;
+    color: mintcream;
 }
 
 #about-me{
     display: flex;
     flex-direction: row;
-    }
-
-#Marianne {
+}
+    
+.Marianne {
     height: 200px;
     width: 150px;
 }
 
 #about-me h1 {
     flex-direction: column;
+    padding: 15px;
+    border-right: 2px solid;
 }
 #about-me-text{
     flex-direction: column; 
     margin-left: 50px;  
 }
 
-#contact-me {
+#work {
     display: flex;
     flex-direction: row;
+ }
+
+#work h1 {
+    padding: 15px;
+    border-right: 2px solid;
+    margin-left: 190px;
 }
 
-#contact-me nav ul li {
-    display: flex;
-    min-width: 300px;
-    justify-content: space-around;
-    margin-left: 50px;
-}
-
-#column {
+#projects {
     display: flex;
     flex-direction: row;
 }
@@ -86,4 +82,25 @@ main h1 {
     height: 300px;
     width: 400px;
     justify-content: center;
+    margin-left: 0px;
 }
+
+
+#contact-me {
+    display: flex;
+    flex-direction: row;    
+}
+
+#contact-me h1{
+    padding: 15px;
+    border-right: 2px solid;
+    margin-left: 150px;
+}
+
+#contact-me nav ul li {
+    display: flex;
+    /* min-width? */
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
