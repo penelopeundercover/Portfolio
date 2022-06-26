@@ -29,7 +29,7 @@ header nav a{
 }
 
 #leaves{
-    background-image: url(../leaves.jpg);
+    background-image: url(./leaves.jpg);
     height: 200px;
     width: 100%;
     margin-bottom: 10px;
