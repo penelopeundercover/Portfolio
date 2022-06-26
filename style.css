@@ -21,6 +21,7 @@ nav ul {
     min-width: 300px;
     list-style:none;
     margin-right: 30px;
+    color: white;
 }
 
 header nav a{
@@ -106,6 +107,6 @@ main {
     display: flex;
     justify-content: space-around;
     margin-left: 50px;
-    color: navy;
+    color:navy;
 }
 
