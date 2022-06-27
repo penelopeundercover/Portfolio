@@ -8,6 +8,10 @@ I got a better feel for flexbox doing this project.
 
 ##Usage
 
+https://penelopeundercover.github.io/Portfolio/
+
+"C:\Users\mjsei\Desktop\Portfolio\Screenshot 2022-06-26 153406.png"
+
 ##Credits
 Leaves photo from pixnio.com: https://pixnio.com/media/branches-chlorophyll-ecology-forest-green-leaves
 
