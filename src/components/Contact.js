@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// TODO:Update text and whatever else on this form
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("Send");
   const onSubmit = (e) => {

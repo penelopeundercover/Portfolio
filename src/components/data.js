@@ -1,4 +1,4 @@
-export const projectImages = [
+export const projectInfo = [
   {
     image: "./images/TeamProfileGenerator.png",
     heading: "Team Profile Generator",
@@ -30,3 +30,5 @@ export const projectImages = [
     link: "https://github.com/penelopeundercover/Employee-Tracker.git",
   },
 ];
+
+// TODO: Resume stuff

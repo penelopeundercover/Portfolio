@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import { projectImages } from "../public/projectImages";
+import { projectInfo } from "./data";
 
 const Projects = () => {
   return (
@@ -8,7 +8,8 @@ const Projects = () => {
       <div className="row">
         <h1> Projects</h1>
       </div>
-      {projectImages.map((Val, key) => {
+      {/* TODO: Did I do the key right? */}
+      {projectInfo.map((Val, key) => {
         const { image, heading, link } = Val;
         return (
           <div className="cards" key={key}>
