@@ -2,30 +2,16 @@ import React, { useState } from "react";
 
 function Header(props) {
   const [shown, setShown] = useState(false);
-  //   const [inputTxt, setInputTxt] = useState("Go Chiefs!");
-
-  //   const handleChange = (e) => {
-  //     setInputTxt(e.target.value);
-  //   };
 
   return (
     <header className="App-header">
       <h1>Marianne Seiwert</h1>
       <nav>
-        {/* TODO: Not sure if this button/scroll thing is going to work. Make it work. Refer to sticky tab. */}
-        <button
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-          }}
-        >
-          Home
-        </button>
-        {/* TODO: Add # to sections */}
-        <a className="smoothscroll" href="#">
+        {/* TODO: Make header fixed. Refer to sticky tab. */}
+        <a className="smoothscroll" href="#about">
           About
         </a>
-
-        <a className="smoothscroll" href="#">
+        <a className="smoothscroll" href="#projects">
           Projects
         </a>
 

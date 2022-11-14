@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
-import { projectInfo } from "./data";
+import { projectInfo } from "./Data";
 
-//TODO: Fix images
 const Projects = () => {
   return (
     <section id="projects">

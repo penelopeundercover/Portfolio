@@ -1,0 +1,12 @@
+.App-Header {
+  height: 300px;
+  position: sticky;
+  top: 0;
+  background-image: url(http://www.getmdl.io/assets/demos/transparent.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.App-Header h1 {
+  opacity: 0;
+  color: white;
+}

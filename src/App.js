@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
+
 // TODO: Import everything I use in every component of the app in this file.
 
 function App() {

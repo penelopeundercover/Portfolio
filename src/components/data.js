@@ -5,7 +5,7 @@ export const projectInfo = [
     link: "https://github.com/penelopeundercover/Team-Profile-Generator.git",
   },
   {
-    image: "./images/epcommerce.png",
+    image: "./images/e-commerce.jpg",
     heading: "E-Commerce Backend",
     link: "https://github.com/penelopeundercover/E-Commerce-Back-End.git",
   },
