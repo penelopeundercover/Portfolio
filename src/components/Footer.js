@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { ModalFooter } from "react-bootstrap";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { SiLinkedin } from "@react-icons/all-files/si/SiLinkedin";
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
 
 const Footer = () => {
   return (

@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-function About(props) {
+function About() {
   return (
     <section id="about-me">
-      <img src="https://avatars.githubusercontent.com/u/106550809?v=4">
-        alt="Marianne" class="Marianne"
-      </img>
+      <img
+        src="https://avatars.githubusercontent.com/u/106550809?v=4"
+        alt="Marianne"
+        className="Marianne"
+      ></img>
       <h1>About Me</h1>
       <div id="about-me-text">
-        {/* TODO: Write something else for this section */}
         <p>
           Straight-shooting and intuitive full stack web developer ready to use
           MERN Stack skills as part of a lively collaborative environment.

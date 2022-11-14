@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-const [shown, setShown] = useState(false);
 
 function Header(props) {
+  const [shown, setShown] = useState(false);
   //   const [inputTxt, setInputTxt] = useState("Go Chiefs!");
 
   //   const handleChange = (e) => {
@@ -12,7 +12,7 @@ function Header(props) {
     <header className="App-header">
       <h1>Marianne Seiwert</h1>
       <nav>
-        {/* TODO: Not sure if this button/scroll thing is going to work. Make it work. */}
+        {/* TODO: Not sure if this button/scroll thing is going to work. Make it work. Refer to sticky tab. */}
         <button
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -20,7 +20,7 @@ function Header(props) {
         >
           Home
         </button>
-
+        {/* TODO: Add # to sections */}
         <a className="smoothscroll" href="#">
           About
         </a>
@@ -33,7 +33,7 @@ function Header(props) {
         {/* https://react-pdf-viewer.dev/examples/preview-a-document-inside-a-modal/ */}
         <button onClick={() => setShown(true)}>Resume</button>
 
-        <a className="smoothscroll" href="#">
+        <a className="smoothscroll" href="#contact">
           Contact
         </a>
       </nav>

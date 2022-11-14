@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+//Future: - add route to save contact form into DB
+//        - email you when contact form is used
+//        - text message when someone contacts you - Twilio
+
 // TODO:Update text and whatever else on this form
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("Send");
@@ -15,7 +19,7 @@ const Contact = () => {
     console.log(conFom);
   };
   return (
-    <div className="container mt-5">
+    <div id="contact" className="container mt-5">
       <h2 className="mb-3">React Contact Form Component Example</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
@@ -63,7 +67,7 @@ export default Contact;
   {/* TODO Add another input field with a value, name, type, and placeholder of "password" */
 }
 {
-  /* TODO Add a `onChange` attribute with a value of `handleInputChange` */
+  /* TODO Add an `onChange` attribute with a value of `handleInputChange` */
 }
 //   <button type="button" onClick={handleFormSubmit}>
 //     Submit
@@ -91,7 +95,7 @@ export default Contact;
   /* TODO Add another input field with a value, name, type, and placeholder of "password" */
 }
 {
-  /* TODO Add a `onChange` attribute with a value of `handleInputChange` */
+  /* TODO Add an `onChange` attribute with a value of `handleInputChange` */
 }
 //       <button type="button" onClick={handleFormSubmit}>
 //         Submit
