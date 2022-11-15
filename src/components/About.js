@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="about">
+    <div id="about">
       <div id="header">
         <h1>Marianne Seiwert</h1>
         <ul>
