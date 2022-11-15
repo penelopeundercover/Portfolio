@@ -1,31 +1,30 @@
 import React, { useState } from "react";
-import background from "../background.jpg";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   const [shown, setShown] = useState(false);
 
   return (
-    <header className="App-header">
-      <div style={{ backgroundImage: `url(${background})` }}>
-        <h1>Marianne Seiwert</h1>
-        <nav>
-          {/* TODO: Make header fixed. Refer to sticky tab. */}
-          <a className="smoothscroll" href="#about">
-            About
-          </a>
-          <a className="smoothscroll" href="#projects">
-            Projects
-          </a>
+    <header>
+      <h1>Marianne Seiwert</h1>
+      <ul>
+        <li>
+          <Link to="/Home">About</Link>
+        </li>
+        <li>
+          <Link to="/Projects">Projects</Link>
+        </li>
 
-          {/* TODO: Set up the pdf viewer for resume. Use resume.js or data.js or however it should be. https://react-pdf-viewer.dev/docs/basic-usage/*/}
-          {/* https://react-pdf-viewer.dev/examples/preview-a-document-inside-a-modal/ */}
-          <button onClick={() => setShown(true)}>Resume</button>
-
-          <a className="smoothscroll" href="#contact">
-            Contact
-          </a>
-        </nav>
-      </div>
+        {/* TODO: Set up the pdf viewer for resume. Use resume.js or data.js or however it should be. https://react-pdf-viewer.dev/docs/basic-usage/*/}
+        {/* https://react-pdf-viewer.dev/examples/preview-a-document-inside-a-modal/ */}
+        {/* <button onClick={() => setShown(true)}>Resume</button> */}
+        <li>
+          <Link to="/Resume">Resume</Link>
+        </li>
+        <li>
+          <Link to="/Contact">Contact</Link>
+        </li>
+      </ul>
     </header>
   );
 }

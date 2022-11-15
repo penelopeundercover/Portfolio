@@ -1,4 +1,6 @@
-// TODO: Use the npm. And the Data file? Do I even need this file?
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 function Resume() {
   return null;
 }

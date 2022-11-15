@@ -1,4 +1,5 @@
 import "./App.css";
+import Home from "./components/Home";
 import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -6,17 +7,10 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 
-// TODO: Import everything I use in every component of the app in this file.
-
 function App() {
   return (
     <div className="App">
-      <Header />
-      <About />
-      <Projects />
-      <Resume />
-      <Contact />
-      <Footer />
+      <Home />
     </div>
   );
 }

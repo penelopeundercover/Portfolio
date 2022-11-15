@@ -1,10 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { projectInfo } from "./Data";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Projects = () => {
   return (
     <section id="projects">
+      <Header></Header>
       <div className="row">
         <h1> Projects</h1>
       </div>
@@ -23,6 +26,7 @@ const Projects = () => {
           </div>
         );
       })}
+      <Footer></Footer>
     </section>
   );
 };
