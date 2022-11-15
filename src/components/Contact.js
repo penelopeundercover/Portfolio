@@ -21,7 +21,7 @@ const Contact = () => {
     console.log(conFom);
   };
   return (
-    <div>
+    <section>
       <Header></Header>
       <div id="contact-page">
         <div id="contact" className="container mt-5">
@@ -55,9 +55,10 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <div></div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
-    </div>
+    </section>
   );
 };
 export default Contact;

@@ -16,7 +16,7 @@ function Header(props) {
             <Link to="/Projects">Projects</Link>
           </li>
 
-          {/* TODO: Set up the pdf viewer for resume. Use resume.js or data.js or however it should be. https://react-pdf-viewer.dev/docs/basic-usage/*/}
+          {/* Future: Set up the pdf viewer for resume. Use resume.js or data.js or however it should be. https://react-pdf-viewer.dev/docs/basic-usage/*/}
           {/* https://react-pdf-viewer.dev/examples/preview-a-document-inside-a-modal/ */}
           {/* <button onClick={() => setShown(true)}>Resume</button> */}
           <li>

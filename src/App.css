@@ -1,3 +1,5 @@
+/* Future: Find a more appealing font. */
+
 /* Header */
 header {
   display: flex;
@@ -64,6 +66,7 @@ header ul a {
   color: white;
   padding: 20px;
 }
+/* Future: Improve contrast in text box. */
 #about-me {
   display: flex;
   flex-direction: column;
@@ -94,6 +97,7 @@ header ul a {
 }
 
 /* Projects Page */
+/* Future: Fix style and alignment issues with cards. */
 .projectCards {
   background-color: rgb(0, 0, 255, 0.3);
 }
@@ -103,20 +107,31 @@ header ul a {
   text-align: center;
 }
 
+/* Resume Page */
+#resume h1 {
+  text-align: center;
+}
+
 /* Contact Page */
 #contact-page {
   background-color: rgb(0, 0, 255, 0.3);
 }
+.resumeImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Footer */
-/* Future: Format footer and its icons to be more useful. */
+/* Future: Format footer and its icons. */
 footer {
   background-color: rgb(0, 0, 0, 0.4);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   bottom: 0;
-  position: absolute;
   height: 30px;
   font-size: 20px;
 }
