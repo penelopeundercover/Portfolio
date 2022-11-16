@@ -18,10 +18,10 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/Portfolio/" element={<Home />} />
+      <Route path="/Portfolio/projects" element={<Projects />} />
+      <Route path="/Portfolio/resume" element={<Resume />} />
+      <Route path="/Portfolio/contact" element={<Contact />} />
     </>
   )
 );
