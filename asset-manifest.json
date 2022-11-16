@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.4ef4f613.css",
+    "main.js": "/Portfolio/static/js/main.f20b0e70.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/lorempicsum737.jpg": "/Portfolio/static/media/lorempicsum737.8380cf23939683fb0df5.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.4ef4f613.css.map": "/Portfolio/static/css/main.4ef4f613.css.map",
+    "main.f20b0e70.js.map": "/Portfolio/static/js/main.f20b0e70.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ef4f613.css",
+    "static/js/main.f20b0e70.js"
+  ]
+}
