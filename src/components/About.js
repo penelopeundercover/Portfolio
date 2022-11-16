@@ -8,16 +8,16 @@ function About() {
         <h1>Marianne Seiwert</h1>
         <ul>
           <li>
-            <Link to="/Home">About</Link>
+            <Link to="/Portfolio/">About</Link>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <Link to="/Portfolio/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/Resume">Resume</Link>
+            <Link to="/Portfolio/resume">Resume</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link to="/Portfolio/contact">Contact</Link>
           </li>
         </ul>
       </div>
