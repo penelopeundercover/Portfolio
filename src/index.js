@@ -8,30 +8,23 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "Home",
-    element: <Home />,
-  },
-  {
-    path: "Projects",
-    element: <Projects />,
-  },
-  {
-    path: "Resume",
-    element: <Resume />,
-  },
-  {
-    path: "Contact",
-    element: <Contact />,
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/contact" element={<Contact />} />
+    </>
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
