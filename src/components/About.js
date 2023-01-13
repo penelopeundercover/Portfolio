@@ -31,7 +31,7 @@ function About() {
           ></img>
           <p>
             Straight-shooting and intuitive full stack web developer ready to
-            use MERN Stack skills as part of a lively collaborative environment.
+            use MERN Stack skills in a lively collaborative environment.
             Recently earned a certificate from the University of Kansas Coding
             Bootcamp while working full-time as a bulldozer operator.
             Construction experience has developed tenacity, solid work ethic,
