@@ -21,7 +21,7 @@ const Contact = () => {
     console.log(conFom);
   };
   return (
-    <section>
+    <>
       <Header></Header>
       <div id="contact-page">
         <div id="contact" className="container mt-5">
@@ -58,7 +58,7 @@ const Contact = () => {
         <div></div>
         <Footer></Footer>
       </div>
-    </section>
+    </>
   );
 };
 export default Contact;

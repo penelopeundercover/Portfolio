@@ -7,32 +7,28 @@
 /* Header/NavBar */
 header {
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  justify-content: center;
-  height: 15vh;
-  /* position: relative; */
+  justify-content: space-between;
+  align-items: center;
   background-image: url(./lorempicsum737.jpg);
   background-size: cover;
   background-position: center;
+  height: 15vh;
   width: 100vw;
   padding: 10px;
 }
 
 header h1 {
-  /* margin-left: 0.625rem; */
   color: white;
+  margin-left: 0.625rem;
 }
 header ul {
   display: flex;
-  /* justify-content: flex-end; */
-  min-width: 18.75rem;
+  gap: 3em;
   list-style: none;
   margin-right: 1.875rem;
 }
 header ul a {
   color: white;
-  padding: 20px;
 }
 
 /* About Page/Homepage */
@@ -52,7 +48,7 @@ header ul a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 15vh;
   width: 100%;
   padding: 10px;
 }
@@ -70,6 +66,9 @@ header ul a {
 #header ul a {
   color: white;
   padding: 20px;
+}
+.mobileNavBar {
+  display: none;
 }
 
 #about-me {
@@ -140,4 +139,34 @@ footer {
   bottom: 0;
   height: 30px;
   font-size: 20px;
+}
+
+@media (max-width: 990px) {
+  .navBar {
+    display: none;
+  }
+  .mobileNavBar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    right: 100%;
+
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+  /* .mobileNavBar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 100%;
+  } */
+  .hamburger {
+    color: fuchsia;
+    size: 80rem;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
 }

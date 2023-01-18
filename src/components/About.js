@@ -25,7 +25,7 @@ function About() {
         <h1>About Me</h1>
         <div id="bio">
           <img
-            src="https://avatars.githubusercontent.com/u/106550809?v=4"
+            src="MarianneSeiwert.jpg"
             alt="Marianne"
             className="Marianne"
           ></img>
