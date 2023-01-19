@@ -2,11 +2,16 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Rubik", sans-serif;
 }
 body {
   background-image: url(./lorempicsum737.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Header/NavBar */
@@ -40,9 +45,10 @@ header ul a {
 #about {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
 }
 #about-me {
   display: flex;
@@ -57,7 +63,6 @@ header ul a {
 #about h1 {
   text-align: center;
   margin-bottom: 20px;
-  margin-right: 10%;
 }
 #bio {
   display: flex;
@@ -65,8 +70,8 @@ header ul a {
   justify-content: center;
 }
 .Marianne {
-  height: 200px;
-  width: 200px;
+  max-height: 200px;
+  max-width: 200px;
 }
 #about p {
   flex-direction: column;
@@ -77,9 +82,13 @@ header ul a {
 
 /* Projects Page */
 /* Future: Fix style and alignment issues with cards. */
-.projectCards {
-  background-color: rgb(0, 0, 255, 0.3);
+#projects h1 {
+  color: white;
+  text-align: center;
 }
+/* .projectCards {
+  
+} */
 .projectCards h1 {
   display: flex;
   margin-bottom: 10px;
@@ -124,7 +133,7 @@ footer {
     align-items: center;
     z-index: 99;
   }
-  #hamburger {
+  .hamburger {
     position: absolute;
     right: 5%;
     color: white;
@@ -134,10 +143,14 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 2%;
+    right: 0;
     top: 15vh;
     width: 20%;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(255, 0, 0, 0.94);
+  }
+  .mobileNavBar ul a {
+    color: black;
+    font-size: 1.25em;
   }
   header h1 {
     font-size: xx-large;

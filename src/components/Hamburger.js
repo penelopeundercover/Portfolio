@@ -7,7 +7,7 @@ const Hamburger = () => {
 
   return (
     <div className="mobileNavBar">
-      <CgMenu id="hamburger" size="2em" onClick={() => setOpen(!open)} />
+      <CgMenu className="hamburger" size="2em" onClick={() => setOpen(!open)} />
       {open && (
         <ul>
           <li>
