@@ -23,7 +23,6 @@ header {
   width: 100%;
   padding: 10px;
 }
-
 header h1 {
   color: white;
   margin-left: 0.625rem;
@@ -45,20 +44,17 @@ header ul a {
 #about {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2%;
+  align-items: center;
+  margin: 2% 10% auto 9%;
 }
 #about-me {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: rgb(0, 0, 0, 0.9);
-  margin-left: 9%;
-  margin-right: 9%;
-  padding-bottom: 0.625rem;
+  padding: 1.5rem;
   color: white;
+  width: fit-content;
 }
 #about h1 {
   text-align: center;
@@ -82,17 +78,16 @@ header ul a {
 
 /* Projects Page */
 /* Future: Fix style and alignment issues with cards. */
+
 #projects h1 {
-  color: white;
-  text-align: center;
-}
-/* .projectCards {
-  
-} */
-.projectCards h1 {
   display: flex;
-  margin-bottom: 10px;
-  text-align: center;
+  color: black;
+  text-shadow: 2px 2px rgb(199, 10, 128);
+  justify-content: center;
+  margin-right: 17vh;
+}
+Row {
+  gap: 3em;
 }
 
 /* Resume Page */

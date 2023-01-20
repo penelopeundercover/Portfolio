@@ -16,7 +16,7 @@ const Projects = () => {
               {projectInfo.map((Val, key) => {
                 const { image, heading, link } = Val;
                 return (
-                  <Col key={key} xs={4}>
+                  <Col key={key} xs={3.5}>
                     <div className="card">
                       <Card style={{ width: "18rem" }}>
                         <Card.Img variant="top" src={image} />
