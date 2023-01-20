@@ -82,14 +82,17 @@ header ul a {
 #projects h1 {
   display: flex;
   color: black;
-  text-shadow: 2px 2px rgb(199, 10, 128);
   justify-content: center;
   margin-right: 17vh;
 }
-Row {
-  gap: 3em;
+#projectCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.card {
+  padding: 0;
+}
 /* Resume Page */
 #resume h1 {
   text-align: center;

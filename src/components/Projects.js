@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Stack } from "react-bootstrap";
 import { projectInfo } from "./Data";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -9,32 +9,28 @@ const Projects = () => {
     <>
       <Header></Header>
       <section id="projects">
-        <div className="projectCards">
-          <h1> Projects</h1>
+        <h1> Projects</h1>
+        <div id="projectCards">
           <Container fluid>
-            <Row>
+            <Row xs={{ gutterX: 3 }}>
               {projectInfo.map((Val, key) => {
                 const { image, heading, link } = Val;
                 return (
-                  <Col key={key} xs={3.5}>
-                    <div className="card">
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={image} />
-                        <Card.Body>
-                          <Card.Title>{heading}</Card.Title>
-                          <Card.Link href="#">{`${link}`}</Card.Link>
-                        </Card.Body>
-                      </Card>
-                    </div>
+                  <Col key={key} className="card">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img variant="top" src={image} />
+                      <Card.Body>
+                        <Card.Title>{heading}</Card.Title>
+                        <Card.Link href="#">{`${link}`}</Card.Link>
+                      </Card.Body>
+                    </Card>
                   </Col>
                 );
               })}
             </Row>
           </Container>
         </div>
-        <div>
-          <Footer></Footer>
-        </div>
+        <Footer></Footer>
       </section>
     </>
   );
