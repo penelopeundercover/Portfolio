@@ -1,3 +1,4 @@
+// FUTURE: Link to resume
 import "./App.css";
 
 import { Link, Routes, Route } from "react-router-dom";
@@ -33,13 +34,24 @@ function App() {
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
+                    Marianne Seiwert
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Link</Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/"}>
+                      Home
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/about"}>
+                      About
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/projects"}>
+                      Projects
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/contact"}>
+                      Contact
+                    </Nav.Link>
+                    {/* Resume */}
                     <NavDropdown
                       title="Dropdown"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
