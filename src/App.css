@@ -15,19 +15,23 @@ body {
 }
 
 /* Header/NavBar */
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 15vh;
   width: 100%;
   padding: 10px;
-}
-header h1 {
-  color: white;
+} */
+.brand {
   margin-left: 0.625rem;
 }
-header ul {
+.title {
+  color: white;
+  border: none;
+  background: none;
+}
+/* header ul {
   display: flex;
   gap: 3em;
   list-style: none;
@@ -35,13 +39,13 @@ header ul {
 }
 header ul a {
   color: white;
-}
+} */
 .mobileNavBar {
   display: none;
 }
 
 /* About Page/Homepage */
-#about {
+/* #about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,25 +78,22 @@ header ul a {
   text-align: justify;
   width: 450px;
   margin-left: 5%;
-}
+} */
 
 /* Projects Page */
 /* Future: Fix style and alignment issues with cards. */
 
-#projects h1 {
+/* #projects h1 {
   display: flex;
   color: black;
+  text-shadow: 2px 2px rgb(199, 10, 128);
   justify-content: center;
   margin-right: 17vh;
 }
-#projectCards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+Row {
+  gap: 3em;
 }
-.card {
-  padding: 0;
-}
+
 /* Resume Page */
 #resume h1 {
   text-align: center;
@@ -107,6 +108,7 @@ header ul a {
   margin-left: auto;
   margin-right: auto;
 }
+*/
 
 /* Footer */
 /* Future: Format footer and its icons. */
