@@ -1,4 +1,3 @@
-// FUTURE: Link to resume
 import "./App.css";
 
 import { Link, Routes, Route } from "react-router-dom";
@@ -22,26 +21,71 @@ function App() {
   return (
     <div className="App">
       {/* <Home /> */}
+
       <header>
-        <h1 className="brand">
-          <button className="title">Marianne Seiwert </button>
-        </h1>
-        <nav className="navBar">
-          <ul className="navMenu">
-            <li className="navLink">About</li>
-            <li className="navLink">Projects</li>
-            <li className="navLink">Resume</li>
-            <li className="navLink">Contact</li>
-          </ul>
-        </nav>
+        {["sm"].map((expand) => (
+          <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+            <Container fluid>
+              <Navbar.Brand className="title" as={Link} to={"/Portfolio/"}>
+                Marianne Seiwert
+              </Navbar.Brand>
+              <Navbar.Toggle
+                aria-controls={`offcanvasNavbar-expand-${expand}`}
+              />
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-${expand}`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                placement="end"
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                    Marianne Seiwert
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Nav.Link className="nav-links" as={Link} to={"/"}>
+                      Home
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/about"}>
+                      About
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/projects"}>
+                      Projects
+                    </Nav.Link>
+                    <Nav.Link className="nav-links" as={Link} to={"/contact"}>
+                      Contact
+                    </Nav.Link>
+                    {/* Resume */}
+                    <NavDropdown
+                      title="Dropdown"
+                      id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    >
+                      <NavDropdown.Item href="#action3">
+                        Action
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action4">
+                        Another action
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action5">
+                        Something else here
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </Nav>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+            </Container>
+          </Navbar>
+        ))}
       </header>
-      Hello
-      {/* <Routes>
+
+      <Routes>
         <Route exact path="/Portfolio/" element={<Home />} />
         <Route exact path="/Portfolio/projects" element={<Projects />} />
         <Route exact path="/Portfolio/resume" element={<Resume />} />
         <Route exact path="/Portfolio/contact" element={<Contact />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
