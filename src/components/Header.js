@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Hamburger from "./Hamburger";
 
 function Header(props) {
   const [shown, setShown] = useState(false);
@@ -29,7 +28,6 @@ function Header(props) {
             </li>
           </ul>
         </div>
-        <Hamburger></Hamburger>
       </header>
     </>
   );
