@@ -1,13 +1,11 @@
 import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { projectInfo } from "./Data";
-import Header from "./Header";
 import Footer from "./Footer";
 
 const Projects = () => {
   return (
     <>
-      <Header></Header>
       <section id="projects">
         <h1> Projects</h1>
         {/* <div id="projectCards"> */}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 
 //Future: -add a backend
@@ -22,7 +21,6 @@ const Contact = () => {
   };
   return (
     <>
-      <Header></Header>
       <div id="contact-page">
         <div id="contact" className="container mt-5">
           <h2 className="mb-3">Contact Me</h2>

@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 import MarianneSeiwert from "./MarianneSeiwert.jpg";
 
 function About() {
   return (
     <>
-      <Header></Header>
       <div id="about">
         <section id="about-me">
           <h1>About Me</h1>

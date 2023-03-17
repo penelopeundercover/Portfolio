@@ -1,6 +1,6 @@
 import "./App.css";
 import "./styling/Header.css";
-import { Link, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -29,25 +29,36 @@ function App() {
         <nav className="navbar">
           <ul className="nav-menu">
             <li className="nav-link">
-              {/* Why isn't activeClassName working? */}
-              <Link to="/Portfolio/home" activeClassName="active">
+              <NavLink
+                to="/Portfolio/home"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/Portfolio/projects" activeClassName="active">
+              <NavLink
+                to="/Portfolio/projects"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/Portfolio/resume" activeClassName="active">
+              <NavLink
+                to="/Portfolio/resume"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
                 Resume
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/Portfolio/contact" activeClassName="active">
+              <NavLink
+                to="/Portfolio/contact"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
