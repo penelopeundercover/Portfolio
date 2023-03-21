@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "./Footer";
 
 //Future: -add a backend
 //        - add route to save contact form into DB
@@ -54,7 +53,6 @@ const Contact = () => {
           </form>
         </div>
         <div></div>
-        <Footer></Footer>
       </div>
     </>
   );

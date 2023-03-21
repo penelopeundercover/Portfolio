@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+
 import MarianneSeiwert from "./MarianneSeiwert.jpg";
 
 function About() {
@@ -27,7 +27,6 @@ function About() {
           </div>
         </section>
       </div>
-      <Footer></Footer>
     </>
   );
 }

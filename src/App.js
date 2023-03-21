@@ -16,71 +16,83 @@ function App() {
       navMenu.classList.toggle("active");
     });
   };
+
   let navigate = useNavigate();
+
   //  const openPDF = () => {
   //   window.open("images/resume/resume.pdf","_blank");
   // }
 
   return (
-    <div className="App">
-      <header className="header">
-        <h1 className="title">
-          <button onClick={() => navigate("/Portfolio/home")}>
-            Marianne Seiwert
-          </button>
-        </h1>
-        <nav className="navbar">
-          <ul className="nav-menu">
-            <li className="nav-link">
-              <NavLink
-                to="/Portfolio/home"
-                className={({ isActive }) => (isActive ? "active" : "inactive")}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-link">
-              <NavLink
-                to="/Portfolio/projects"
-                className={({ isActive }) => (isActive ? "active" : "inactive")}
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li className="nav-link">
-              <NavLink
-                to="/Portfolio/resume"
-                className={({ isActive }) => (isActive ? "active" : "inactive")}
-              >
-                Resume
-              </NavLink>
-            </li>
-            <li className="nav-link">
-              <NavLink
-                to="/Portfolio/contact"
-                className={({ isActive }) => (isActive ? "active" : "inactive")}
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+    <>
+      <div className="App">
+        <header className="header">
+          <h1 className="title">
+            <button onClick={() => navigate("/Portfolio/home")}>
+              Marianne Seiwert
+            </button>
+          </h1>
+          <nav className="navbar">
+            <ul className="nav-menu">
+              <li className="nav-link">
+                <NavLink
+                  to="/Portfolio/home"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-link">
+                <NavLink
+                  to="/Portfolio/projects"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  Projects
+                </NavLink>
+              </li>
+              <li className="nav-link">
+                <NavLink
+                  to="/Portfolio/resume"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  Resume
+                </NavLink>
+              </li>
+              <li className="nav-link">
+                <NavLink
+                  to="/Portfolio/contact"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
 
-        <div className="hamburger" ref={getHamburger}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-      </header>
-    </div>
+          <div className="hamburger" ref={getHamburger}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+        </header>
+      </div>
+
+      <Routes>
+        <Route exact path="/Portfolio/" element={<Home />} />
+        <Route exact path="/Portfolio/projects" element={<Projects />} />
+        <Route exact path="/Portfolio/resume" element={<Resume />} />
+        <Route exact path="/Portfolio/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
-
-<Routes>
-  <Route exact path="/Portfolio/" element={<Home />} />
-  <Route exact path="/Portfolio/projects" element={<Projects />} />
-  <Route exact path="/Portfolio/resume" element={<Resume />} />
-  <Route exact path="/Portfolio/contact" element={<Contact />} />
-</Routes>;
 
 export default App;

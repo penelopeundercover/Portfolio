@@ -1,7 +1,7 @@
 // Future: Use react pdf viewer for resume.
 
 import React from "react";
-import Footer from "./Footer";
+
 function Resume() {
   return (
     <section id="resume">
@@ -11,7 +11,6 @@ function Resume() {
         className="resumeImage"
         alt="Marianne Seiwert Resume"
       />
-      <Footer></Footer>
     </section>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { projectInfo } from "./Data";
-import Footer from "./Footer";
 
 const Projects = () => {
   return (
@@ -28,7 +27,6 @@ const Projects = () => {
           </Row>
         </Container>
         {/* </div> */}
-        <Footer></Footer>
       </section>
     </>
   );

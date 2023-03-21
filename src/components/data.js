@@ -15,5 +15,3 @@ export const projectInfo = [
     link: "https://github.com/SteveWeed79/project-1-beats-on-the-street.git",
   },
 ];
-
-// TODO: Resume stuff
