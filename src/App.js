@@ -1,6 +1,6 @@
 import "./App.css";
 import "./styling/Header.css";
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -16,6 +16,7 @@ function App() {
       navMenu.classList.toggle("active");
     });
   };
+  let navigate = useNavigate();
   //  const openPDF = () => {
   //   window.open("images/resume/resume.pdf","_blank");
   // }
@@ -24,7 +25,9 @@ function App() {
     <div className="App">
       <header className="header">
         <h1 className="title">
-          <button>Marianne Seiwert</button>
+          <button onClick={() => navigate("/Portfolio/home")}>
+            Marianne Seiwert
+          </button>
         </h1>
         <nav className="navbar">
           <ul className="nav-menu">
@@ -73,13 +76,11 @@ function App() {
   );
 }
 
-{
-  <Routes>
-    <Route exact path="/Portfolio/" element={<Home />} />
-    <Route exact path="/Portfolio/projects" element={<Projects />} />
-    <Route exact path="/Portfolio/resume" element={<Resume />} />
-    <Route exact path="/Portfolio/contact" element={<Contact />} />
-  </Routes>;
-}
+<Routes>
+  <Route exact path="/Portfolio/" element={<Home />} />
+  <Route exact path="/Portfolio/projects" element={<Projects />} />
+  <Route exact path="/Portfolio/resume" element={<Resume />} />
+  <Route exact path="/Portfolio/contact" element={<Contact />} />
+</Routes>;
 
 export default App;
