@@ -1,4 +1,6 @@
 /* Resume Page */
-#resume h1 {
-  text-align: center;
+.resumeImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

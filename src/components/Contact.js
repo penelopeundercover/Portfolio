@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styling/Contact.css";
 //Future: -add a backend
 //        - add route to save contact form into DB
 //        - email me when contact form is used

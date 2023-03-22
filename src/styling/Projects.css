@@ -4,12 +4,6 @@
   display: grid;
   place-items: center;
 }
-#projects h1 {
-  display: flex;
-  color: black;
-  justify-content: center;
-  margin-right: 17vh;
-}
 #projectCards {
   min-height: 100%;
   display: grid;

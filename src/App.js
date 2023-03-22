@@ -2,6 +2,7 @@ import "./App.css";
 import "./styling/Header.css";
 import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
+import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
@@ -36,7 +37,7 @@ function App() {
             <ul className="nav-menu">
               <li className="nav-link">
                 <NavLink
-                  to="/Portfolio/home"
+                  to="/Portfolio/about"
                   className={({ isActive }) =>
                     isActive ? "active" : "inactive"
                   }
@@ -86,7 +87,8 @@ function App() {
       </div>
 
       <Routes>
-        <Route exact path="/Portfolio/" element={<Home />} />
+        <Route exact path="/Portfolio/home" element={<Home />} />
+        <Route exact path="/Portfolio/about" element={<About />} />
         <Route exact path="/Portfolio/projects" element={<Projects />} />
         <Route exact path="/Portfolio/resume" element={<Resume />} />
         <Route exact path="/Portfolio/contact" element={<Contact />} />

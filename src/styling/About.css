@@ -33,3 +33,6 @@
   width: 450px;
   margin-left: 5%;
 }
+
+@media (max-width: 900px) {
+}

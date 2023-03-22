@@ -1,12 +1,12 @@
 import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { projectInfo } from "./Data";
+import "../styling/Projects.css";
 
 const Projects = () => {
   return (
     <>
       <section id="projects">
-        <h1> Projects</h1>
         {/* <div id="projectCards"> */}
         <Container fluid>
           <Row id="projectCards">

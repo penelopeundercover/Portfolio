@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styling/About.css";
 import MarianneSeiwert from "./MarianneSeiwert.jpg";
 
 function About() {
