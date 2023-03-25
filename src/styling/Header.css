@@ -97,7 +97,8 @@ li :hover {
     text-align: center;
     transition: 0.5s;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
   }
 
   .nav-links {

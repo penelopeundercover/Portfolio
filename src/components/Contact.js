@@ -1,60 +1,38 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styling/Contact.css";
-//Future: -add a backend
-//        - add route to save contact form into DB
-//        - email me when contact form is used
-//        - text message when someone contacts me--use Twilio
+import { FaGithub } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
 
-const Contact = () => {
-  const [formStatus, setFormStatus] = useState("Send");
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    console.log(conFom);
-  };
+function Contact() {
   return (
     <>
-      <div id="contact-page">
-        <div id="contact" className="container mt-5">
-          <h2 className="mb-3">Contact Me</h2>
-          <form onSubmit={onSubmit}>
-            <div className="mb-3">
-              <label className="form-label" htmlFor="name">
-                Name
-              </label>
-              <input className="form-control" type="text" id="name" required />
-            </div>
-            <div className="mb-3">
-              <label className="form-label" htmlFor="email">
-                Email
-              </label>
-              <input
-                className="form-control"
-                type="email"
-                id="email"
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label className="form-label" htmlFor="message">
-                Message
-              </label>
-              <textarea className="form-control" id="message" required />
-            </div>
-            <button className="btn btn-danger" type="submit">
-              {formStatus}
-            </button>
-          </form>
-        </div>
-        <div></div>
+      <div className="contact-page">
+        <section className="contact">
+          <h1>Let's Connect!</h1>
+          <div className="contact-info">
+            <ul>
+              <li>mjseiwert@outlook.com</li>
+              <li>
+                <a href="https://github.com/penelopeundercover" target="blank">
+                  <FaGithub />
+                </a>
+                https://www.linkedin.com/in/marianne-seiwert/
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marianne-seiwert"
+                  target="blank"
+                >
+                  <SiLinkedin />
+                </a>
+                https://github.com/penelopeundercover
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </>
   );
-};
+}
+
 export default Contact;
