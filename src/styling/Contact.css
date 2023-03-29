@@ -1,13 +1,13 @@
 /* Contact Page */
 
-/* TODO: What's going on with width property?
-Email icon
-Make icons larger
-Add animated border */
+/* TODO: Fix responsive styling.
+Stop hover effect on email icon.
+Create "Copied to clipboard!" for email address.*/
+
 .contact-page {
   position: relative;
   display: flex;
-  /* width: 40%; */
+  width: 40%;
   flex-direction: column;
   align-items: center;
   margin: 5% auto;
@@ -18,21 +18,33 @@ Add animated border */
   display: flex;
   flex-direction: column;
   background-color: rgb(0, 0, 0, 0.9);
-  padding: 1.5rem;
+  padding: 2rem;
   color: white;
   width: fit-content;
 }
 
 .contact-page h1 {
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 0;
 }
 
 .contact-info ul {
-  text-align: center;
   list-style: none;
+  white-space: nowrap;
 }
 
-.contact-info ul li a {
+.contact-info ul li {
+  margin-top: 3.5%;
+}
+
+.email {
+  margin-right: 2%;
+}
+
+.github {
+  margin-right: 2%;
+}
+
+.linkedin {
   margin-right: 2%;
 }
