@@ -1,33 +1,33 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import { projectInfo } from "./Data";
 import "../styling/Projects.css";
 
 const Projects = () => {
   return (
     <>
-      <section id="projects">
-        {/* <div id="projectCards"> */}
-        <Container fluid>
-          <Row id="projectCards">
-            {projectInfo.map((Val, key) => {
-              const { image, heading, link } = Val;
-              return (
-                <Col key={key} className="card">
+      <div className="projects">
+        <Row className="row">
+          {projectInfo.map((Val, key) => {
+            const { image, heading, link } = Val;
+            return (
+              <Col xs={12} md={4} className="column">
+                <Card key={key} className="card">
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={image} />
+                    <Card.Img variant="top" src={image} className="img-fluid" />
                     <Card.Body>
                       <Card.Title>{heading}</Card.Title>
                       <Card.Link href="#">{`${link}`}</Card.Link>
                     </Card.Body>
                   </Card>
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
-        {/* </div> */}
-      </section>
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
+      </div>
     </>
   );
 };

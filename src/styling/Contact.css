@@ -1,7 +1,7 @@
 /* Contact Page */
 
-/* TODO: Fix responsive styling.
-Stop hover effect on email icon.
+/* TODO: 
+Fix responsiveness?
 Create "Copied to clipboard!" for email address.*/
 
 .contact-page {
@@ -30,6 +30,7 @@ Create "Copied to clipboard!" for email address.*/
 
 .contact-info ul {
   list-style: none;
+  flex-wrap: nowrap;
   white-space: nowrap;
 }
 
@@ -47,4 +48,15 @@ Create "Copied to clipboard!" for email address.*/
 
 .linkedin {
   margin-right: 2%;
+}
+
+@media (max-width: 900px) {
+  .contact-page {
+    width: 15%;
+  }
+
+  .contact-info ul {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
 }

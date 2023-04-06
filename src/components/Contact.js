@@ -17,6 +17,7 @@ function Contact() {
                 <button
                   onClick={() => {
                     navigator.clipboard.writeText("mjseiwert@outlook.com");
+                    alert("Copied to clipboard");
                   }}
                 >
                   <IconContext.Provider
@@ -31,6 +32,7 @@ function Contact() {
                 <button
                   onClick={() => {
                     navigator.clipboard.writeText("mjseiwert@outlook.com");
+                    alert("Copied to clipboard");
                   }}
                 >
                   mjseiwert@outlook.com

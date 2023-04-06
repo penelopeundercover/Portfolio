@@ -1,19 +1,33 @@
 /* Projects Page */
-#projects {
-  padding: 2rem 1rem 4rem 1rem;
+/* TODO: Eliminate links and make titles a button instead with pointer cursor */
+.projects {
+  padding-top: 2rem;
   display: grid;
   place-items: center;
 }
-#projectCards {
+
+.card {
+  padding: 0px !important;
+}
+
+/* #projectCards {
   min-height: 100%;
   display: grid;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-#projectCards > div {
+/* #projectCards > div {
   flex-basis: calc(20% - 40px);
-}
-.card {
+} */
+/* .container {
   margin: 20px;
+  min-height: 100%;
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+.container > div {
+  flex-basis: calc(20% - 40px);
+} */

@@ -5,10 +5,10 @@ import MarianneSeiwert from "./MarianneSeiwert.jpg";
 function About() {
   return (
     <>
-      <div id="about">
-        <section id="about-me">
+      <div className="about">
+        <section className="about-me">
           <h1>About Me</h1>
-          <div id="bio">
+          <div className="bio">
             <img
               src={MarianneSeiwert}
               alt="Marianne"
