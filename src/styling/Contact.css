@@ -1,15 +1,15 @@
 /* Contact Page */
 
 /* TODO: 
-Fix responsiveness?
-Create "Copied to clipboard!" for email address.*/
+Create "Copied to clipboard!" for email address.
+Align email line.*/
 
 .contact-page {
   position: relative;
   display: flex;
   width: 40%;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   margin: 5% auto;
 }
 
@@ -32,10 +32,15 @@ Create "Copied to clipboard!" for email address.*/
   list-style: none;
   flex-wrap: nowrap;
   white-space: nowrap;
+  text-align: left;
 }
 
 .contact-info ul li {
   margin-top: 3.5%;
+}
+
+.contact-info ul li div {
+  cursor: pointer;
 }
 
 .email {
@@ -50,13 +55,46 @@ Create "Copied to clipboard!" for email address.*/
   margin-right: 2%;
 }
 
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 900px) {
   .contact-page {
-    width: 15%;
+    align-items: center;
+  }
+
+  .contact {
+    margin-top: 4em;
+  }
+
+  .contact-page h1 {
+    margin-bottom: 0.4em;
+  }
+
+  .contact-info {
+    font-size: 0.5em;
   }
 
   .contact-info ul {
     flex-wrap: wrap;
     white-space: normal;
+    text-align: left;
+  }
+
+  .email {
+    font-size: 1.45em;
+  }
+
+  .github {
+    font-size: 1.25em;
+  }
+
+  .linkedin {
+    font-size: 1.15em;
   }
 }

@@ -18,8 +18,14 @@ const Projects = () => {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={image} className="img-fluid" />
                     <Card.Body>
-                      <Card.Title>{heading}</Card.Title>
-                      <Card.Link href="#">{`${link}`}</Card.Link>
+                      {/* <img src={image}/> */}
+                      <Card.Link
+                        className="text-dark"
+                        href={link}
+                        target="blank"
+                      >
+                        {heading}
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 </Card>

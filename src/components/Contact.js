@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styling/Contact.css";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
@@ -6,6 +6,16 @@ import { HiOutlineMail } from "react-icons/hi";
 import { IconContext } from "react-icons";
 
 function Contact() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  function CopyEmail(isCopiedText) {
+    navigator.clipboard.writeText("mjseiwert@outlook.com");
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
+  }
+
   return (
     <>
       <div className="contact-page">
@@ -14,12 +24,7 @@ function Contact() {
           <div className="contact-info">
             <ul>
               <li>
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText("mjseiwert@outlook.com");
-                    alert("Copied to clipboard");
-                  }}
-                >
+                <div onClick={() => CopyEmail(true)}>
                   <IconContext.Provider
                     value={{
                       color: "rgb(234, 4, 126)",
@@ -28,15 +33,12 @@ function Contact() {
                   >
                     <HiOutlineMail className="email" />
                   </IconContext.Provider>
-                </button>
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText("mjseiwert@outlook.com");
-                    alert("Copied to clipboard");
-                  }}
-                >
-                  mjseiwert@outlook.com
-                </button>
+                  {isCopied == true ? (
+                    <span> Copied to clipboard!</span>
+                  ) : (
+                    <span>mjseiwert@outlook.com</span>
+                  )}
+                </div>
               </li>
 
               <li>
@@ -54,7 +56,15 @@ function Contact() {
                     <FaGithub className="github" />
                   </IconContext.Provider>
                 </a>
-                https://github.com/penelopeundercover
+                <a
+                  href="https://github.com/penelopeundercover"
+                  target="blank"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  https://github.com/penelopeundercover
+                </a>
               </li>
 
               <li>
@@ -72,7 +82,15 @@ function Contact() {
                     <SiLinkedin className="linkedin" />
                   </IconContext.Provider>
                 </a>
-                https://www.linkedin.com/in/marianne-seiwert
+                <a
+                  href="https://www.linkedin.com/in/marianne-seiwert"
+                  target="blank"
+                  className={({ isActive }) =>
+                    isActive ? "active" : "inactive"
+                  }
+                >
+                  https://www.linkedin.com/in/marianne-seiwert
+                </a>
               </li>
             </ul>
           </div>
