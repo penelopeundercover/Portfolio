@@ -1,40 +1,29 @@
 /* Projects Page */
-/* TODO: Eliminate links and make titles a button instead with pointer cursor.
-Make images in cards the same size. 
-Fix responsive.*/
+/* TODO: Fix responsive.*/
 .projects {
-  padding-top: 2rem;
+  padding-top: 7rem;
   display: grid;
   place-items: center;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .card {
   padding: 0px !important;
   text-align: center;
+  font-size: 1.1em;
 }
 
 .link {
   color: black;
 }
 
-/* #projectCards {
-  min-height: 100%;
-  display: grid;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+@media (max-width: 900px) {
+  .projects {
+    padding-top: 3rem;
+  }
+
+  .card {
+    width: fit-content;
+  }
 }
-/* #projectCards > div {
-  flex-basis: calc(20% - 40px);
-} */
-/* .container {
-  margin: 20px;
-  min-height: 100%;
-  display: grid;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.container > div {
-  flex-basis: calc(20% - 40px);
-} */

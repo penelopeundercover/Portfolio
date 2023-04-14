@@ -10,7 +10,7 @@ export const projectInfo = [
     link: "https://github.com/penelopeundercover/NoSQL-Social-Network-API.git",
   },
   {
-    image: "images/beatsOnTheStreet.png",
+    image: "images/beatsOnTheStreet.jpg",
     heading: "Beats on the Street",
     link: "https://github.com/SteveWeed79/project-1-beats-on-the-street.git",
   },

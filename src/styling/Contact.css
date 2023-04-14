@@ -1,9 +1,5 @@
 /* Contact Page */
 
-/* TODO: 
-Create "Copied to clipboard!" for email address.
-Align email line.*/
-
 .contact-page {
   position: relative;
   display: flex;
