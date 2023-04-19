@@ -1,11 +1,19 @@
 /* Projects Page */
-/* TODO: Fix responsive.*/
+
 .projects {
   padding-top: 7rem;
   display: grid;
   place-items: center;
-  grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  row-gap: 2em;
+}
+
+.column {
+  align-content: center;
 }
 
 .card {
@@ -21,9 +29,17 @@
 @media (max-width: 900px) {
   .projects {
     padding-top: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .card {
     width: fit-content;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .card {
+    font-size: smaller;
   }
 }

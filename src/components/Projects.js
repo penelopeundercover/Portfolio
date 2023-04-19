@@ -15,10 +15,9 @@ const Projects = () => {
             return (
               <Col xs={12} sm={12} md={4} className="column">
                 <Card key={key} className="card">
-                  <Card style={{ width: "18rem" }}>
+                  <Card style={{ maxWidth: "18rem" }}>
                     <Card.Img variant="top" src={image} className="img-fluid" />
                     <Card.Body>
-                      {/* <img src={image}/> */}
                       <Card.Link
                         className="text-dark"
                         href={link}
