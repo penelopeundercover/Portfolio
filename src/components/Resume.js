@@ -1,6 +1,6 @@
-// Future: Use react pdf viewer for resume.
-import React, { useState } from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
+// TODO: Make it downloadable and printable.
+import React, { useState, useEffect } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
 import "../styling/Resume.css";
 
 function Resume() {
@@ -11,11 +11,16 @@ function Resume() {
     setNumPages(numPages);
     setPageNumber(1);
   }
+  useEffect(() => {
+    pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+  });
 
   return (
     <div>
       <Document
-        file="./Marianne-Seiwert-Resume-ATS.pdf"
+        file={
+          process.env.PUBLIC_URL + "/public/Marianne-Seiwert-Resume-ATS.pdf"
+        }
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
