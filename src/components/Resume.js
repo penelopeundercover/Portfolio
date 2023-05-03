@@ -1,6 +1,8 @@
+//TODO: Fix annotation issues.
 // TODO: Make it downloadable and printable.
 import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "../styling/Resume.css";
 
 function Resume() {
@@ -18,16 +20,18 @@ function Resume() {
   return (
     <div>
       <Document
-        file={
-          process.env.PUBLIC_URL + "/public/Marianne-Seiwert-Resume-ATS.pdf"
-        }
+        file={process.env.PUBLIC_URL + "/Marianne-Seiwert-Resume-ATS.pdf"}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page pageNumber={pageNumber} />
+        <Page
+          className="resumePage"
+          pageNumber={1}
+          renderAnnotationLayer={true}
+          externalLinkTarget="_blank"
+          renderTextLayer={false}
+        />
       </Document>
-      <p>
-        Page {pageNumber} of {numPages}
-      </p>
+      <p>Page {pageNumber}</p>
     </div>
   );
 }

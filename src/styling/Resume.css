@@ -1,6 +1,5 @@
-/* Resume Page */
-.resumeImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.resumePage {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 }
