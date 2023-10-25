@@ -20,7 +20,7 @@ function About() {
               Recently earned a certificate from the University of Kansas Coding
               Bootcamp while working full-time as a bulldozer operator.
               Construction experience has developed tenacity, solid work ethic,
-              and a make it work mindset. Seeking a long-term position in a
+              and a make-it-work mindset. Seeking a long-term position in a
               strong company that expects high-quality output and positive
               collaboration.
             </p>
