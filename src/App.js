@@ -2,7 +2,6 @@ import "./App.css";
 import "./styling/Header.css";
 import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
-import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
@@ -20,10 +19,6 @@ function App() {
 
   let navigate = useNavigate();
 
-  //  const openPDF = () => {
-  //   window.open("images/resume/resume.pdf","_blank");
-  // }
-
   return (
     <>
       <div className="App">
@@ -35,16 +30,6 @@ function App() {
           </h1>
           <nav className="navbar">
             <ul className="nav-menu">
-              <li className="nav-link">
-                <NavLink
-                  to="/Portfolio/about"
-                  className={({ isActive }) =>
-                    isActive ? "active" : "inactive"
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
               <li className="nav-link">
                 <NavLink
                   to="/Portfolio/projects"
@@ -88,7 +73,6 @@ function App() {
 
       <Routes>
         <Route exact path="/Portfolio/home" element={<Home />} />
-        <Route exact path="/Portfolio/about" element={<About />} />
         <Route exact path="/Portfolio/projects" element={<Projects />} />
         <Route exact path="/Portfolio/resume" element={<Resume />} />
         <Route exact path="/Portfolio/contact" element={<Contact />} />
