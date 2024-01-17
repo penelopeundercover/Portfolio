@@ -1,5 +1,6 @@
 import "./App.css";
 import "./styling/Header.css";
+import React, { useEffect, useState } from "react";
 import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -7,6 +8,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 function App() {
+  const [IsInitialLoad, setIsInitialLoad] = useState(true);
   const getHamburger = () => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -18,6 +20,12 @@ function App() {
   };
 
   let navigate = useNavigate();
+  useEffect(() => {
+    if (IsInitialLoad) {
+      navigate("/Portfolio/home?i=true");
+      setIsInitialLoad(false);
+    }
+  }, []);
 
   return (
     <>
@@ -72,6 +80,7 @@ function App() {
       </div>
 
       <Routes>
+        {/* <Route index element={<Home />} /> */}
         <Route exact path="/Portfolio/home" element={<Home />} />
         <Route exact path="/Portfolio/projects" element={<Projects />} />
         <Route exact path="/Portfolio/resume" element={<Resume />} />

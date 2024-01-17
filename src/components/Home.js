@@ -1,14 +1,19 @@
-// TODO: Make box appear with fade effect on page load without having to click.
-//       Stop fade effect after initial visit to the homepage.
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styling/Home.css";
 import MarianneSeiwert from "./MarianneSeiwert.jpg";
 
 function Home() {
+  const [AboutClasses, setAboutClasses] = useState("about");
+  const queryParameters = new URLSearchParams(window.location.search);
+  const IsInitialLoad = queryParameters.get("i");
+  useEffect(() => {
+    if (IsInitialLoad != undefined && IsInitialLoad != null && IsInitialLoad) {
+      setAboutClasses("about initial-load");
+    }
+  }, []);
   return (
     <>
-      <div className="about">
+      <div className={AboutClasses}>
         <section className="about-me">
           <h1>Hi! I'm Marianne.</h1>
           <div className="bio">
@@ -23,19 +28,9 @@ function Home() {
               Currently continuing to grow as a full stack web developer with
               skills in the MERN stack. I'm especially passionate about working
               with databases. In addition to coding and bulldozers, I love
-              playing the piano, cooking, nurturing my beloved houseplants, and
-              reading.
+              playing the piano, nurturing my beloved houseplants, going to
+              concerts with my husband, and meeting new people.
             </p>
-            {/* <p>
-              Straight-shooting and intuitive full stack web developer ready to
-              use MERN Stack skills in a lively collaborative environment.
-              Recently earned a certificate from the University of Kansas Coding
-              Bootcamp while working full-time as a bulldozer operator.
-              Construction experience has developed tenacity, solid work ethic,
-              and a make-it-work mindset. Seeking a long-term position in a
-              strong company that expects high-quality output and positive
-              collaboration.
-            </p> */}
           </div>
         </section>
       </div>
