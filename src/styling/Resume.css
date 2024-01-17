@@ -1,18 +1,20 @@
-.resumePage {
-  display: flex;
-  justify-content: center;
-  padding-top: 3rem;
+.resume-page {
+  width: 80%;
+  margin: auto;
 }
 
 iframe {
+  display: block;
   width: 80%;
-  min-height: 210vh;
+  height: 210vh;
   margin: 5% 10%;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
 }
 
-@media (max-width: 900px) {
+/* This is not working. */
+/* @media (max-width: 900px) {
   iframe {
-    padding: auto;
+    height: 110vh;
+    padding: 8%;
   }
-}
+} */

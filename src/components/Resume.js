@@ -5,7 +5,7 @@ import "../styling/Resume.css";
 
 function Resume() {
   return (
-    <div>
+    <div class="resume-page">
       <iframe
         src={process.env.PUBLIC_URL + "/Marianne-Seiwert-Resume-ATS.pdf"}
         title="Marianne Seiwert Resume"

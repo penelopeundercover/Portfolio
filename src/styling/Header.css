@@ -69,7 +69,6 @@ li :hover {
     font-size: 0.8em;
     white-space: normal;
   }
-  /* Button might look better if the font were just smaller so it could stay on one line. */
 
   .hamburger {
     display: block;
