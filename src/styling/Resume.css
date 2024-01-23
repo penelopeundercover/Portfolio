@@ -1,20 +1,11 @@
 .resume-page {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  padding: 2% 10%;
 }
 
 iframe {
-  display: block;
-  width: 80%;
-  height: 210vh;
-  margin: 5% 10%;
-  padding-bottom: 8%;
+  width: 95%;
+  height: 250vh;
+  /* margin: 5% 10%; */
+  /* padding-bottom: 8%; */
 }
-
-/* This is not working. */
-/* @media (max-width: 900px) {
-  iframe {
-    height: 110vh;
-    padding: 8%;
-  }
-} */
