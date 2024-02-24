@@ -1,5 +1,3 @@
-//TODO: Make iframe responsive
-
 import React from "react";
 import "../styling/Resume.css";
 
