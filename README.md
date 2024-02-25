@@ -1,6 +1,6 @@
 # Portfolio
 ![Portfolio Screenshot](public/images/portfolio_screenshot.jpg "portfolio homepage screenshot")
-## Refactor of my portfolio using React. 
+## Refactor of my portfolio using React
 The first version of my portfolio was built simply with HTML and CSS. This refactor is my first React project, and I learned a lot while building it!
 
 I handled navigation between pages with React Router. Overall it was pretty easy to use.
