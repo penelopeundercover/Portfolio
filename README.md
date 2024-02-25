@@ -1,4 +1,6 @@
 # Portfolio
+##Here's a link to my deployed portfolio:
+https://penelopeundercover.github.io/Portfolio/
 ![Portfolio Screenshot](public/images/portfolio_screenshot.jpg "portfolio homepage screenshot")
 ## Refactor of my portfolio using React
 The first version of my portfolio was built simply with HTML and CSS. This refactor is my first React project, and I learned a lot while building it!
@@ -16,6 +18,3 @@ For the Homepage, I decided I wanted my bio box to fade in the very first time a
 
 For now I'm simply using Github Pages to host. I'll probably deploy with an additional hosting service soon. 
 Another future development plan is to explore accessibility and SEO, implement what I learn into this project, and see what happens!
-
-Here's a link to my deployed portfolio:
-https://penelopeundercover.github.io/Portfolio/
