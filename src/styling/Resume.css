@@ -1,10 +1,26 @@
 .resume-page {
+  display: flex;
   width: 100%;
-  padding: 2% 10%;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 
-iframe {
+.resume {
+  width: 80%;
+  height: auto;
+  padding: 5%;
+}
+
+@media (max-width: 800px) {
+  .resume {
+    width: 100%;
+  }
+}
+
+/* iframe {
   width: 95%;
   height: 250vh;
   padding-bottom: 15%;
-}
+} */
